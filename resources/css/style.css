@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth
+  }
+
+@font-face {
+    font-family: 'Mintsoda';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Mintsoda - Lime Green 16x16 Regular'), url('../fonts/MintsodaLimeGreen16X16Regular-OVadO.woff') format('woff'); 
+}
+
+@font-face {
+    font-family: 'Yoster Island';
+    src: url('../fonts/YosterIsland.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+    
+
+body{
+    height:100vh;
+    overflow: hidden;
+    background-color: black;
+    color: white;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Mintsoda', monospace;
+    font-weight:100;
+    font-size: 3rem;
+}
+
+main{
+    margin-bottom: auto;
+}
+
+img{
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+}
+
+.line-separator{
+    margin-top: 4rem;
+    width: 100%;
+    height: auto;
+    max-width: 508px;
+}
+
+.weather-image-container{
+    position: relative;
+    height: 24vh;
+    width: 24vh;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+}
+
+.weather-image{
+    position: absolute;
+    top: 14%;
+    left: 14%;
+    height: 72%;
+}
+
+.weatherman-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 100%;
+}
+
+.dialogue-box{
+    margin-bottom: 4vh;
+    position: absolute;
+    bottom: 0;
+    max-width: 100%;
+    height: auto;
+}
+
+.dialogue-box p{
+    position:absolute;
+    font-family: 'Yoster Island', monospace;
+    top: 60%;
+    left: 7%;
+    font-size: 1.5rem;
+    text-wrap: nowrap;
+    font-style: italic;
+    white-space:pre;
+}
+
+.dialogue-box img{
+    width: 100%;
+    height: auto;
+    max-width: 1000px;
+    
+}
+
+.dialogue-box .before, .dialogue-box .after{
+    font-size: 1.2rem;
+    
+    font-family: 'Mintsoda', monospace;
+    font-style:normal;
+}
+
+/* .textbox{
+    position: relative;
+    background: url(../images/textboxch.png) no-repeat;
+    background-position-y: 0;
+    
+} */
+
+#temperature{ 
+    margin-bottom: 50%;
+    font-family: 'Mintsoda', monospace;
+    font-size: 3rem;
+    font-weight: bold;
+}
