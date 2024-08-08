@@ -1,7 +1,7 @@
 "use strict";
 
 const apiKey = "5fd145011d8739e23ff8a50b457f2e0c";
-const apiURL = `https://api.openweathermap.org/data/2.5/weather?q=wroclaw&appid=${apiKey}&units=metric`;
+const apiURL = `https://api.openweathermap.org/data/2.5/weather?q=suwalki&appid=${apiKey}&units=metric`;
 
 const sleep = (time) => {
     return new Promise(resolve => setTimeout(resolve, time))
